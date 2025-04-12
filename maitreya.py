@@ -3,13 +3,8 @@ import PyPDF2
 import io
 import google.generativeai as genai
 import os
-from dotenv import load_dotenv
-
-# Load environment variables from .env file
-load_dotenv()
-
 # Configure the Gemini API
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_API_KEY = "AIzaSyDrksJ5fvEXs7ZCKS4qQ4-LFgP8M4MZAE0"
 genai.configure(api_key=GEMINI_API_KEY)
 
 # Function to extract text from PDF
